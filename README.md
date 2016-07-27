@@ -1,14 +1,38 @@
 # NAME
 
-DBIx::QueryTracer - It's new $module
+DBIx::QueryTracer - Query Tracer for DBI
 
 # SYNOPSIS
 
+    use DBI;
     use DBIx::QueryTracer;
+    my $dbh = DBI->connect(...);
+    {
+        DBIx::QueryTracer->trace;
+        ### Throw any queries via $dbh
+    };
+    my $query_count = DBIx::QueryTracer->count;
+    my @trace_data  = DBIx::QueryTracer->queries;
 
 # DESCRIPTION
 
-DBIx::QueryTracer is ...
+DBIx::QueryTracer is a query tracer tool module.
+
+# METHODS
+
+- trace
+
+    Return the guard object.
+
+    Tracing queries until the guard object become undef.
+
+- count
+
+    Return queries count that traced.
+
+- queries
+
+    Return queries information as hashref in perl array.
 
 # LICENSE
 

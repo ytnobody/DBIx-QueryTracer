@@ -1,5 +1,5 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Query Tracer for DBI",
    "author" : [
       "ytnobody <ytnobody@gmail.com>"
    ],
@@ -42,15 +42,30 @@
       },
       "runtime" : {
          "requires" : {
+            "Clone" : "0",
+            "Devel::StackTrace" : "0",
+            "Guard" : "0",
             "perl" : "5.008001"
          }
       },
       "test" : {
          "requires" : {
+            "DBI" : "0",
             "Test::More" : "0.98"
          }
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/ytnobody/DBIx-QueryTracer/issues"
+      },
+      "homepage" : "https://github.com/ytnobody/DBIx-QueryTracer",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/ytnobody/DBIx-QueryTracer.git",
+         "web" : "https://github.com/ytnobody/DBIx-QueryTracer"
+      }
+   },
    "version" : "0.01"
 }
