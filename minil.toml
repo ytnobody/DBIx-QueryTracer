@@ -1,4 +1,4 @@
 name = "DBIx-QueryTracer"
-# badges = ["travis"]
+badges = ["travis", "coveralls"]
 module_maker="ModuleBuildTiny"
 

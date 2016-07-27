@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/ytnobody/DBIx-QueryTracer.svg?branch=master)](https://travis-ci.org/ytnobody/DBIx-QueryTracer) [![Coverage Status](https://img.shields.io/coveralls/ytnobody/DBIx-QueryTracer/master.svg?style=flat)](https://coveralls.io/r/ytnobody/DBIx-QueryTracer?branch=master)
 # NAME
 
 DBIx::QueryTracer - Query Tracer for DBI
